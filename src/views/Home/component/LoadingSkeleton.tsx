@@ -4,7 +4,7 @@ export interface propType {
   children: ReactNode;
 }
 
-const HeaderSkeleton = ({ children }: propType) => {
+const LoadingSkeleton = ({ children }: propType) => {
   return <>{children}</>;
 };
-export default HeaderSkeleton;
+export default LoadingSkeleton;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Header from "./component/Header";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import LooadingSkeleton from "./component/LooadingSkeleton";
+import LoadingSkeleton from "./component/LoadingSkeleton";
 import Footer from "./component/Footer";
 import MainLayout from "./component/MainLayout";
-import MainLayoutSkeletion from "./component/MainLayoutSkeletion";
-import FooterSkeltion from "./component/FooterSkeltion";
+import MainLayoutSkeleton from "./component/MainLayoutSkeleton";
+import FooterSkeleton from "./component/FooterSkeleton";
 
 const Home = () => {
   const [isLooading, setIsLooding] = useState(false);
@@ -21,7 +21,7 @@ const Home = () => {
         {isLooading ? (
           <Header />
         ) : (
-          <LooadingSkeleton>
+          <LoadingSkeleton>
             <div className="header">
               <div className="container">
                 <div className="row  header justify-content-evenly align-items-center">
@@ -35,25 +35,25 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </LooadingSkeleton>
+          </LoadingSkeleton>
         )}
       </div>
       <div className="">
         {isLooading ? (
           <MainLayout />
         ) : (
-          <LooadingSkeleton>
-            <MainLayoutSkeletion />
-          </LooadingSkeleton>
+          <LoadingSkeleton>
+            <MainLayoutSkeleton />
+          </LoadingSkeleton>
         )}
       </div>
       <div className="">
         {isLooading ? (
           <Footer />
         ) : (
-          <LooadingSkeleton>
-            <FooterSkeltion />
-          </LooadingSkeleton>
+          <LoadingSkeleton>
+            <FooterSkeleton />
+          </LoadingSkeleton>
         )}
       </div>
     </SkeletonTheme>
