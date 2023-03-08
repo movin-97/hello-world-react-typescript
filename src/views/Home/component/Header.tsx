@@ -1,10 +1,7 @@
 import React, { ReactNode } from "react";
 import { NavLink } from "react-router-dom";
-export interface propType {
-  children?: ReactNode;
-  name?: string;
-}
-const Header = ({ children, name }: propType) => {
+
+const Header:React.FC= () => {
   return (
     <div className="header">
       <div className="container">

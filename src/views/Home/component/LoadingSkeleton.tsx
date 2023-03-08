@@ -4,7 +4,7 @@ export interface propType {
   children: ReactNode;
 }
 
-const LoadingSkeleton = ({ children }: propType) => {
+const LoadingSkeleton:React.FC<propType> = ({ children }) => {
   return <>{children}</>;
 };
 export default LoadingSkeleton;

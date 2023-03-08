@@ -4,10 +4,10 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import LoadingSkeleton from "./component/LoadingSkeleton";
 import Footer from "./component/Footer";
 import MainLayout from "./component/MainLayout";
-import MainLayoutSkeleton from "./component/MainLayoutSkeleton";
+import MainLayoutSkeleton from "./component/MainLayoutSkeletion";
 import FooterSkeleton from "./component/FooterSkeleton";
 
-const Home = () => {
+const Home:React.FC = () => {
   const [isLooading, setIsLooding] = useState(false);
 
   useEffect(() => {
