@@ -7,10 +7,17 @@ import MainLayout from "./component/MainLayout";
 import MainLayoutSkeleton from "./component/MainLayoutSkeletion";
 import FooterSkeleton from "./component/FooterSkeleton";
 
+
+import { container } from "../../inversify.config";
+import { UserService } from "../../services/UserService";
+
 const Home:React.FC = () => {
   const [isLooading, setIsLooding] = useState(false);
 
+  let _service: UserService = container.get(UserService);
+
   useEffect(() => {
+    console.log(_service.getAllUser());
     setTimeout(() => {
       setIsLooding(true);
     }, 3000);
