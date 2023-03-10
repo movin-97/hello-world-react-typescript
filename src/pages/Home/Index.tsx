@@ -23,10 +23,11 @@ const Home: React.FC = () => {
           </button>
         </div>
       </nav>
-      <main className="w-50 mx-auto">
-        <button className="btn btn-primary m-2 col-4" onClick={() => navigate('/dashboard')}>
+      <button className="btn btn-primary m-2 col-2" onClick={() => navigate('/dashboard')}>
           DashBoard
         </button>
+      <main className="w-50 mx-auto">
+        
         <h1 className="text-center p-4">React sample project</h1>
         <div>
           <ul className="w-50 mx-auto">
