@@ -58,12 +58,14 @@ const Login: React.FC = () => {
               name="username"
               type="text"
               formik={formik}
+              id="userNameInput"
             />
             <TextInput
               label="Password"
               name="password"
               type="password"
               formik={formik}
+              id="passwordInput"
             />
           </div>
           <button type="submit" className="btn btn-primary w-100">

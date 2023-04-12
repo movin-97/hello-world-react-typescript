@@ -6,10 +6,11 @@ interface Props {
   label: string;
   type: string;
   name: string;
-  formik: any;
+  formik?: any;
+  id:string
 }
 
-const TextInput: React.FC<Props> = ({ label, type, name, formik }) => {
+const TextInput: React.FC<Props> = ({ label, type, name, formik,id }) => {
   return (
     <div className="mb-3">
       <label className="d-block form-label text-start text-muted">
@@ -19,7 +20,8 @@ const TextInput: React.FC<Props> = ({ label, type, name, formik }) => {
         type={type}
         className="form-control"
         name={name}
-        id={label}
+        placeholder={name}
+        id={id}
         onChange={formik.handleChange}
         onBlur={formik.handleBlur}
         value={formik.values[name]}

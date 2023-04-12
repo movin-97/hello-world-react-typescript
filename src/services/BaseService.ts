@@ -36,7 +36,6 @@ export abstract class ServiceHelper {
 
   protected httpPut(route: string, data: any): Promise<AxiosResponse<any>> {
     const path = `${this.apiUrl}/${route}`;
-
     return axios.put(path, data);
   }
 

@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
     });
     navigate("/login", { replace: true });
   };
+  
   return (
     <div>
       <nav className="navbar bg-dark">

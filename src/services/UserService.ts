@@ -1,4 +1,5 @@
 import { injectable } from "inversify";
+// import mockData from '../asserts/items.json'
 
 interface IUserService {
   getAllUser(): any;
@@ -7,6 +8,6 @@ interface IUserService {
 @injectable()
 export class UserService  {
   getAllUser() {
-    return ["Logesh"];
+    return ["Movin"]
   }
 }

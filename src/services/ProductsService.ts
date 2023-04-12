@@ -1,4 +1,3 @@
-import { ProductsResponceModel } from "./../model/products.model";
 import { injectable } from "inversify";
 import { BaseService } from "./BaseService";
 
@@ -6,10 +5,10 @@ import { BaseService } from "./BaseService";
 
 @injectable()
 export class ProductsService extends BaseService{
-  public fatchProducts(endUrl: string): Promise<ProductsResponceModel> {
+  public fatchProducts(endUrl: string): Promise<any> {
     return this.httpGet('products', endUrl)
       .then((responce) => {
-        return responce.data.products
+        return responce
       })
       .catch((error) => console.log(error));
   }
