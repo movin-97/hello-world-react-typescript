@@ -7,16 +7,16 @@ const Dashboard: React.FC = () => {
 
   let _service: ProductsService = container.get(ProductsService);
   const fatchData = () => {
-    _service.fatchProducts("products").then((products) => setData(products));
+    _service.fatchProducts("products").then((response) => setData(response.data.products));
   };
   useEffect(() => {
     fatchData();
   }, []);
-  console.log(data);
+  console.log(data,"hello");
   return (
     <div className="mt-3 mb-3">
       <div className="row g-2 m-auto">
-        {data?.map((item: any, i: number) => {
+        {data && data.map((item: any, i: number) => {
           return (
             <div className="col-md-3" key={i}>
               <div className="card">
@@ -36,6 +36,7 @@ const Dashboard: React.FC = () => {
             </div>
           );
         })}
+        hello
       </div>
     </div>
   );
