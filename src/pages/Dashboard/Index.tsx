@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     fatchData();
   }, []);
-  console.log(data,"hello");
+  
   return (
     <div className="mt-3 mb-3">
       <div className="row g-2 m-auto">
