@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     });
     navigate("/login", { replace: true });
   };
-  
+
   return (
     <div>
       <nav className="navbar bg-dark">
@@ -25,11 +25,28 @@ const Home: React.FC = () => {
           </button>
         </div>
       </nav>
-      <button className="btn btn-primary m-2 col-2" onClick={() => navigate('/dashboard')}>
+      <div className="d-flex justify-content-around align-items-center">
+        <button
+          className="btn btn-primary m-2 col-2"
+          onClick={() => navigate("/dashboard")}
+        >
           DashBoard
         </button>
+        <button
+          className="btn btn-primary m-2 col-2"
+          onClick={() => navigate("/roos-menu")}
+        >
+          RoosMenu
+        </button>
+        <button
+          className="btn btn-primary m-2 col-2"
+          onClick={() => navigate("/hook-api")}
+        >
+          Custom Hook
+        </button>
+      </div>
+
       <main className="w-50 mx-auto">
-        
         <h1 className="text-center p-4">React sample project</h1>
         <div>
           <ul className="w-50 mx-auto">

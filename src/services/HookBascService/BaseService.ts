@@ -11,7 +11,6 @@ export class BaseService {
   createClient() {
     return Axios.create({
       baseURL:"https://dummyjson.com",
-      headers: { "Content-Type": "application/json" },
     });
   }
 

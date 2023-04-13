@@ -35,6 +35,14 @@ let routes = [
   {
     path:'/dashboard',
     element:<Dashboard/>
+  },
+  {
+    path:'/roos-menu',
+    element:<RoosMenu/>
+  },
+  {
+    path:'/hook-api',
+    element:<HookApi/>
   }
 ];
 export default routes;

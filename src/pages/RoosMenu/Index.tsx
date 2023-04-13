@@ -57,16 +57,6 @@ const RoosMenu = () => {
     _setMenuList(tempData);
   };
 
-  useEffect(() => {
-    const getData = () => {
-      axios
-        .get("./items.json")
-        .then((r) => console.log(r))
-        .catch((e) => console.log(e));
-    };
-    getData();
-  }, []);
-
   return (
     <>
       <article className="text-center">
