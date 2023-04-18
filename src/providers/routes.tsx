@@ -7,7 +7,6 @@ const Login = React.lazy(() => import("../pages/Auth/Login"));
 const Home = React.lazy(() => import("../pages/Home/Index"));
 const Dashboard = React.lazy(()=> import('../pages/Dashboard/Index'))
 const RoosMenu = React.lazy(()=> import('../pages/RoosMenu/Index'))
-const HookApi = React.lazy(()=> import('../pages/UseApiHook/CustomHookAPI'))
 
 let routes = [
   {
@@ -40,9 +39,5 @@ let routes = [
     path:'/roos-menu',
     element:<RoosMenu/>
   },
-  {
-    path:'/hook-api',
-    element:<HookApi/>
-  }
 ];
 export default routes;
