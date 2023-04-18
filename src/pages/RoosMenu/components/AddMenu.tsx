@@ -1,13 +1,12 @@
 import { MenuItem } from "../../../model/index";
 import React, { useState } from "react";
-// import "./EmployeeForm.style.css";
 
 interface Props {
   onBackBtnClickHnd: () => void;
   onSubmitClickHnd: (data: MenuItem) => void;
 }
 
-const AddEmployee: React.FC<Props> = ({
+const AddMenu: React.FC<Props> = ({
   onBackBtnClickHnd,
   onSubmitClickHnd,
 }) => {
@@ -128,4 +127,4 @@ const AddEmployee: React.FC<Props> = ({
   );
 };
 
-export default AddEmployee;
+export default AddMenu;

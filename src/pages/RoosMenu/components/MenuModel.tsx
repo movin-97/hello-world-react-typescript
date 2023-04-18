@@ -6,7 +6,7 @@ interface Props {
   data: MenuItem;
 }
 
-const EmployeeModal: React.FC<Props> = ({ data, onClose }) => {
+const MenuModel: React.FC<Props> = ({ data, onClose }) => {
   return (
     <div id="myModal" className="modal">
       <div className="modal-content">
@@ -36,4 +36,4 @@ const EmployeeModal: React.FC<Props> = ({ data, onClose }) => {
   );
 };
 
-export default EmployeeModal;
+export default MenuModel;

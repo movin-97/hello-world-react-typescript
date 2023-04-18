@@ -8,14 +8,9 @@ interface Props{
   onEdit: (data: MenuItem) => void;
 };
 
-const EmployeeList:React.FC<Props> = ({list,onDeleteClickHnd,onEdit}) => {
+const MenuList:React.FC<Props> = ({list,onDeleteClickHnd,onEdit}) => {
   const [showModal, setShowModal] = useState(false);
   const [dataToShow, setDataToShow] = useState(null as MenuItem | null);
-
-  const viewEmployee = (data: MenuItem) => {
-    setDataToShow(data);
-    setShowModal(true);
-  };
 
   const onCloseModal = () => setShowModal(false);
 
@@ -73,4 +68,4 @@ const EmployeeList:React.FC<Props> = ({list,onDeleteClickHnd,onEdit}) => {
   );
 };
 
-export default EmployeeList;
+export default MenuList;
